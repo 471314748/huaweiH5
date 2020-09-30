@@ -1,0 +1,77 @@
+/* *{
+    padding:0;
+    margin:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html,body,.app{
+    height:100%;
+} */
+body,
+div,
+span,
+p,
+ul,
+li,
+a,
+img,
+input,
+h1,
+h2,
+h3,
+h4,
+i,
+nav,
+header,
+footer,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 将所有的标签转换成内减模型的盒子 */
+}
+img {
+  vertical-align: middle;
+  border: none;
+}
+input {
+  border: none;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+i {
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+body {
+  font-size: 12px;
+  line-height: 1;
+  background-color: #f5f5f5;
+}
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+@supports (bottom: env(safe-area-inset-bottom)){
+  body,
+  .footer（底部栏）{
+      padding-bottom: constant(safe-area-inset-bottom);
+      padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+html,body,#app {
+  height: 100%;
+  background-color: #fff;
+}
